@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Materilize themes</title>
+
+    <!-- Compiled and minified CSS -->
+    <!-- Materialze-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Materialize icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/favicon (9).ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon (9).ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <div id="navbar" class="navbar-fixed scrollspy">
+        <nav class="grey darken-2">
+            <div class="nav-wrapper container">
+                <div class="container"> <a href="index.html" class="brand-logo"><img
+                            src="images/kittencup_transparent.png" height="60px"></a></div>
+
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <ul class="right hide-on-med-and-down">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutMe.html">About Me</a></li>
+                    <li><a href="https://www.linkedin.com/in/victor-nguyen-it/" target="_blank">My LinkedIn</a></li>
+                    <li><a id="hireButton" class="waves-effect waves-light modal-trigger" data-target="modal1">Get in
+                            touch!</a></li>
+                </ul>
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal modal-fixed-footer">
+                    <div class="row modal-content">
+                        <form id="userForm" class="col s12" method="POST" action="" onSubmit="submitUser();">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input placeholder="John" name="first_name" id="first_name" type="text"
+                                        class="validate" required>
+                                    <label for="first_name">First Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input placeholder="Smith" name="last_name" id="last_name" type="text"
+                                        class="validate" required>
+                                    <label for="last_name">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input placeholder="Mobile" id="mobile" name="mobile" type="tel" class="validate"
+                                        pattern="[0-9]{10}" required data-length="10">
+                                    <label for="mobile">Mobile</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" name="email" type="email" class="validate" required>
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <button id="submitUser" type="submit"
+                                    class="waves-effect waves-light btn">Submit</button>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+
+                <!--Mobile Nav-->
+                <ul class="right side-nav" id="mobile-demo">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutMe.html">About Us</a></li>
+                    <li><a href="https://www.linkedin.com/in/victor-nguyen-it/" target="_blank">My LinkedIn</a></li>
+                    <li><a id="hireButton" class="waves-effect waves-light modal-trigger" data-target="modal1">Get in
+                            touch!</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="index-banner" class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container valign">
+                <br><br>
+                <div class="row center">
+                    <img src="images/logo.png">
+                    <h5 class="header col s12 light grey-text text-darken-2">I'm a huge lover of all things video games,
+                        programming and music. </h5>
+                    <h5 class="header col s12 light grey-text text-darken-2">And if you haven't already noticed, I love
+                        cats too.</h5>
+                </div>
+
+                <div class="row center">
+                    <img src="images/kitten2.png" height="250px">
+                    &emsp;&emsp;&emsp;&emsp;
+                    <img src="images/kitten1.png" height="250px">
+                </div>
+
+                <div class="row center">
+                    <a href="#startPosts"
+                        class="btn-floating btn-large waves-effect waves-light grey darken-2 head-link"><i
+                            class="fa fa-angle-double-down"></i></a>
+                </div>
+                <br><br>
+            </div>
+        </div>
+        <div class="parallax"><img src="images/about.jpg" alt="Unsplashed background img 2"></div>
+    </div>
+
+    <hr>
+
+    <div class="container" id="startPosts">
+        <br>
+        <br>
+
+        <div class="center-align">
+            <div class="row">
+                <div class="col s12 m10 offset-m1 l9 offset-l1">
+                    <h1 class="header center grey-text text-darken-2">About me</h1>
+
+                    <blockquote><i>"Anything that can go wrong will go wrong."</i></blockquote>
+
+                    <p>Every time I experience a problem in programming, whether that be syntax, logic error or just
+                        seeing someone's else code not functioning as intended, this quote often comes to mind and in
+                        some ways I've prescribed to the idea that there will always be errors in programming. However,
+                        discovering the problem and resolving it is also one of the great things about programming and
+                        the
+                        sense of accomplishment by overcoming that problem. With programming, there's always some way to
+                        improve on your work, and and I think that's a great thing; to be able to strive towards
+                        continuous improvement. I have had diverse programming experiences, from creating a game, to
+                        developing applications in VR to coding in both front-end and back-end for web development.
+                    </p>
+                    <p>I'm a huge gamer and play all genres of video games, whether that is single-player or
+                        multi-player. I have already created a simple space-invaders game during my early years of
+                        learning programming, and I hope to continue using my programming knowledge towards developing
+                        new and exciting games for everyone to experience.
+                    </p>
+                    <p>I'm also a huge fan of music, of all sorts of genres and langauges. Music can communicate emotion
+                        through language barriers and I think that's a wonderful thing. I can play the piano and also in
+                        my free time I would try and learn about composing music. Music and video games overlap a lot
+                        and making a game with good music helps create a magical experience.
+                    </p>
+
+                    <br>
+
+                    <h4 class="header center grey-text text-darken-2">Some of my favourite things</h4>
+
+                    <blockquote><i>"Anything that can go wrong will go wrong."</i></blockquote>
+
+                    <div class="row">
+                        <div class="col s12 m6 l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="images/nierautomata1_cropped.jpg" height="200px">
+                                </div>
+                                <div class="card-content">
+                                    <p>One of my favourite games is NieR: Automata; it has daring gameplay elements, a
+                                        compelling story and emotional soundtracks enough to induce tears all merged
+                                        together in one package.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m6 l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="images/piano_cropped.png" height="200px">
+                                </div>
+                                <div class="card-content">
+                                    <p>One of my favourite romantic-period composers is Chopin. His music is full of
+                                        emotion expressed throughout in his compositions, one
+                                        would be his Waltz in C Sharp Minor (Op. 64 No. 2).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m6 l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="images/bongocat.png">
+                                </div>
+                                <div class="card-content">
+                                    <p>I also like cats. I'm not crazy though, I swear.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>So now you know more about me! I like video games, music and cats! I would like to think that I'm a friendly and loyal person, albeit sometimes too naive or nice as
+                        my friends like to put it. To my future co-workers, I hope to get along with you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer grey darken-2">
+        <div class="container">
+            <div class="row">
+
+                <div id="categories" class="col l3 offset-l1 s12 m8">
+                    <h5 class="white-text">Categories</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+                        <li><a class="grey-text text-lighten-3" href="aboutMe.html">About Me</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/victor-nguyen-it/"
+                                target="_blank">My LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l3 offset-l5">
+
+                    <a href="#"><i style="font-size: 38px;" class="fa fa-facebook-square"></i></a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="#"><i style="font-size: 38px;" class="fa fa-twitter-square"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#"><i style="font-size: 38px;" class="fa fa-google-plus-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS SECTION-->
+
+    <!-- socket IO Served by the server -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="env.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+    <script src="js/modalTriggger.js"></script>
+
+    <script src="js/validateForm.js"></script>
+
+    <script type="text/javascript" script-name="carter-one" src="http://use.edgefonts.net/carter-one.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.button-collapse').sideNav();
+        });
+    </script>
+
+    <script>
+        $('.head-link').click(function (e) {
+            e.preventDefault();
+
+            var goto = $(this).attr('href');
+
+            $('html, body').animate({
+                scrollTop: $(goto).offset().top
+            }, 800);
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Victor's Crib</title>
+
+    <!-- Compiled and minified CSS -->
+    <!-- Materialze-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Materialize icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/favicon (9).ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon (9).ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="navbar" class="navbar-fixed scrollspy">
+        <nav class="grey darken-2">
+            <div class="nav-wrapper container">
+                <div class="container"> <a href="index.html" class="brand-logo"><img
+                            src="images/kittencup_transparent.png" height="60px"></a></div>
+
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <ul class="right hide-on-med-and-down">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutMe.html">About Me</a></li>
+                    <li><a href="https://www.linkedin.com/in/victor-nguyen-it/" target="_blank">My LinkedIn</a></li>
+                    <li><a id="hireButton" class="waves-effect waves-light modal-trigger" data-target="modal1">Get in
+                            touch!</a></li>
+                </ul>
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal modal-fixed-footer">
+                    <div class="row modal-content">
+                        <form id="userForm" class="col s12" method="POST" action="/" onSubmit="submitUser();">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input placeholder="John" name="first_name" id="first_name" type="text"
+                                        class="validate" required>
+                                    <label for="first_name">First Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input placeholder="Smith" name="last_name" id="last_name" type="text"
+                                        class="validate" required>
+                                    <label for="last_name">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input placeholder="Mobile" id="mobile" name="mobile" type="tel" class="validate"
+                                        pattern="[0-9]{10}" required data-length="10">
+                                    <label for="mobile">Mobile</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" name="email" type="email" class="validate" required>
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <button id="submitUser" type="submit"
+                                    class="waves-effect waves-light btn">Submit</button>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+
+                <!--Mobile Nav-->
+                <ul class="right side-nav" id="mobile-demo">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutMe.html">About Us</a></li>
+                    <li><a href="https://www.linkedin.com/in/victor-nguyen-it/" target="_blank">My LinkedIn</a></li>
+                    <li><a id="hireButton" class="waves-effect waves-light modal-trigger" data-target="modal1">Get in
+                            touch!</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <div id="index-banner" class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container valign">
+                <br><br>
+
+                <div class="row center" style="padding-top:50px;">
+                    <div class="app_top img">
+                        <img src="images/kittencup2_transparent.png" alt="avatar" height="256px">
+                    </div>
+                </div>
+
+                <h1 class="header center grey-text text-darken-2">Hi! My name is Victor</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light grey-text text-darken-2">I'm a software developer versed in many
+                        fields of front-end and back-end programming</h5>
+                </div>
+                <div class="row center">
+                    <a href="#startPosts"
+                        class="btn-floating btn-large waves-effect waves-light grey darken-2 head-link"><i
+                            class="fa fa-angle-double-down"></i></a>
+                </div>
+                <br><br>
+                <hr>
+            </div>
+        </div>
+        <div class="parallax"><img src="images/main.jpg" alt="Unsplashed background img 2"></div>
+    </div>
+
+    <div class="container" id="startPosts">
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="center-align">
+                <h3 class="header center grey-text text-darken-2">What I can offer you</h3>
+
+                <br><br>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="column">
+                            <img src="assets/javascript.png" alt="javascript" height="250px">
+                            <h3>Javascript</h3>
+                            <p>Javascript is a programming language that is used by web browsers to create a dynamic
+                                and
+                                interactive experience for users. Javascript is versatile and can be used on both
+                                front-end
+                                and back-end development and is considered to be one of the most popular programming
+                                languages today.
+                                While the primary use of javascript is used to build websites, it can also be
+                                used to create browser based games and mobile applications if used alongside certain
+                                frameworks.</p>
+                        </div>
+                        <br><br><br>
+
+                        <div class="column">
+                            <img src="assets/html.png" alt="html" height="250px">
+                            <img src="assets/css.png" alt="css" height="250px">
+                            <h3>Html/Css</h3>
+                            <p>Html and css are front-end programming languages that are used to design the
+                                structure,
+                                layout, visual
+                                depiction and of a website. Html and css is essentially the face of a website, and
+                                creates a
+                                strong first impression on users visiting the site. A poorly designed website will
+                                quickly
+                                deter users while a professional one will earn their trust. </p>
+                        </div>
+                        <br><br><br>
+
+                        <div class="column">
+                            <img src="assets/cSharp.png" alt="cSharp" height="250px">
+                            <h3>C#</h3>
+                            <p>C# is a popular general-purpose programming language comprising of front-end and
+                                back-end
+                                used for developing applications on the
+                                microsoft platform and requires .NET framework to work. It is particularly good for
+                                windows
+                                desktop applications and games, but can also be used for web development as well as
+                                mobile
+                                platforms.</p>
+                        </div>
+                        <br><br><br>
+
+                        <div class="column">
+                            <img src="assets/nodejs.png" alt="nodejs" height="250px">
+                            <h3>Node.js</h3>
+                            <p>Node.js is a back-end javascript runtime programming language that is designed to
+                                build
+                                scalable network applications. It is particularly good at asynchronous event
+                                scenarios
+                                such
+                                as proxying different services with different response times or collecting data from
+                                multiple source points. It is a server side proxy where it can handle large amounts
+                                of
+                                simultaneous connections in a non blocking manner. </p>
+                        </div>
+                    </div>
+
+                    <a id="hireButton" class="waves-effect waves-light btn-large modal-trigger"
+                        style="background-color: #aaaaaa;" data-target="modal1"><i class="material-icons left"
+                            style="color:white">emoji_people</i>Get in touch!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer grey darken-2">
+        <div class="container">
+            <div class="row">
+                <div id="categories" class="col l3 offset-l1 s12 m8">
+                    <h5 class="white-text">Categories</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+                        <li><a class="grey-text text-lighten-3" href="aboutMe.html">About Me</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/victor-nguyen-it/"
+                                target="_blank">My LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l3 offset-l5">
+                    <a href="#"><i style="font-size: 38px;" class="fa fa-facebook-square"></i></a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="#"><i style="font-size: 38px;" class="fa fa-twitter-square"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#"><i style="font-size: 38px;" class="fa fa-google-plus-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS SECTION-->
+
+    <!-- socket IO Served by the server -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="env.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+    <script src="js/modalTriggger.js"></script>
+
+    <script src="js/validateForm.js"></script>
+
+    <script type="text/javascript" script-name="carter-one" src="http://use.edgefonts.net/carter-one.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.button-collapse').sideNav();
+        });
+    </script>
+
+    <script>
+        $('.head-link').click(function (e) {
+            e.preventDefault();
+
+            var goto = $(this).attr('href');
+
+            $('html, body').animate({
+                scrollTop: $(goto).offset().top
+            }, 800);
+        });
+
+    </script>
+</body>
+
+</html>
